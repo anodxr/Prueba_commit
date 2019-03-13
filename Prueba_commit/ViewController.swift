@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Se carga la vista")
+        let today = NSDate()
+        print(today)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
