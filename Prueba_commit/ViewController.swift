@@ -9,15 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var progress: UIProgressView!
+    
+    @IBOutlet weak var boton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Se carga la vista")
         let today = NSDate()
         print(today)
+        setupUI()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    func setupUI () {
+        boton.setTitle("Presiona", for: .normal)
+        boton.tintColor = .white
+        boton.backgroundColor = .black
+        //boton.titleLabel
+    }
 
 }
 
